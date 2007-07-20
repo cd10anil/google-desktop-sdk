@@ -1,0 +1,15 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<view height="200" width="200" onopen="View_onOpen()">
+  <img height="200" name="kitty" width="200" src="kitty.jpg" />
+  <img height="200" name="puppy" width="200" src="puppy.jpg" />
+  <script src="main.js" />
+</view>

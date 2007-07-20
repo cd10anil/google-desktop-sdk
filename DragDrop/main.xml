@@ -1,0 +1,40 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<view height="150" width="250" onopen="ViewHandlers.onOpen()">
+  <img src="background.png" />
+  <div 
+      dropTarget="true"
+      ondragover="ViewHandlers.onDragOver();" 
+      ondragout="ViewHandlers.onDragOut();" 
+      ondragdrop="ViewHandlers.onDragDrop();"
+      height="100"
+      width="200"
+      x="25" 
+      y="25" 
+      background="#FFFFFF">
+      <img name="image0" x="0" y="25" width="50" height="50" />
+      <img name="image1" x="50" y="25" width="50" height="50" />
+      <img name="image2" x="100" y="25" width="50" height="50" />
+      <img name="image3" x="150" y="25" width="50" height="50" />
+      <label 
+		      name="label"
+		      x="0"
+		      y="0" 
+		      align="center" 
+		      vAlign="middle"
+		      width="200" 
+		      height="100"
+		      size="15" 
+		      enabled="false" />
+  </div>
+
+  <script src="main.js" />
+</view>

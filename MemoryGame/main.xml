@@ -1,0 +1,8 @@
+<view height="200" showCaptionAlways="true" width="200" onopen="MG_Gadget.onOpen()">
+    <button height="90" name="blueButton" width="90" x="5" y="5"/>
+    <button height="90" name="redButton" width="90" x="105" y="5"/>
+    <button height="90" name="yellowButton" width="90" x="5" y="105"/>
+    <button height="90" name="greenButton" width="90" x="105" y="105"/>
+    <div height="100%" name="mask" opacity="127" width="100%" x="1" background="#C0C0E0"/>
+    <script src="main.js" />
+</view>

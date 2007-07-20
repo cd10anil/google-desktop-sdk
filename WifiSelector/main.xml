@@ -1,0 +1,38 @@
+<view width="164" height="105" resizable="zoom" onopen="wifiGadget.onOpen()">
+  <div width="158" height="99" name="elemSkin1" background="images\skin1.png"/>
+  <div width="158" height="99" name="elemSkin2" background="images\skin2.png" opacity="0"/>
+  <div width="158" height="99" name="elemSkin3" background="images\skin3.png" opacity="0"/>
+  
+  <div name="elemMainArea" x="3" y="4" width="146" height="59">
+
+    <div name="elemSelectionDiv" background="images\listbox.png" visible="true" opacity="0">
+      <img x="129" y="1" src="images\scroll_background.png"/>
+      <label name="elemDefaultMessage" x="3" y="3" width="130" height="50" wordwrap="true" size="10" visible="false"/>
+      <button name="elemScrollUp" x="129" y="1" image="images\elemScrollUp_u.png" overImage="images\elemScrollUp_o.png" downImage="images\elemScrollUp_d.png" disabledImage="images\elemScrollUp_dis.png"/>
+      <button name="elemScrollDown" x="129" y="43" image="images\elemScrollDown_u.png" overImage="images\elemScrollDown_o.png" downImage="images\elemScrollDown_d.png" disabledImage="images\elemScrollDown_dis.png"/>
+      <progressbar name="elemScroll" x="129" y="10" max="0" enabled="true" orientation="vertical" height="35" emptyImage="images\scroll_background.png" fullImage="images\scroll_background.png" thumbImage="images\scrollbar_u.png" thumbOverImage="images\scrollbar_o.png" thumbDownImage="images\scrollbar_d.png"/>
+    </div>
+
+    <div name="elemDisplayArea" visible="true" opacity="0">
+
+      <div name="elemStrengthArea" width="142" height="22" background="images\displaywindow.png">
+        <div name="elemConnectingProgress" background="images\progressbar_full.png" x="8" y="9" height="5" width="70" visible="false"/>
+        <div name="elemSignalStrength" background="images\networkstrength_full.png" x="7" y="6" height="10" width="87"/>
+        <label name="elemStrPercent" x="100" y="4" width="36" align="right" size="8" bold="true">100%</label>
+        <img src="images\displaywindow_reflection.png"/>
+      </div>
+      
+      <label name="elemConnectionLabel" y="27" color="#f2f2f2" size="8">Connected to</label>
+      <label name="elemNetworkName" y="41" color="#f2f2f2" size="8">Network Name1</label>
+    </div>
+  </div>
+  
+  <div name="elemButtonArea" x="6" y="67" width="150" height="19">
+    <button name="elemConnectButton" image="images\connect_u.png" overImage="images\connect_o.png" downImage="images\connect_d.png" disabledImage="images\connect_dis.png" visible="false" />
+    <button name="elemDisconnectButton" x="68" image="images\disconnect_u.png" overImage="images\disconnect_o.png" downImage="images\disconnect_d.png" disabledImage="images\disconnect_dis.png" visible="true"/>
+    <button x="72" name="elemCancelButton" image="images\cancel_u.png" overImage="images\cancel_o.png" downImage="images\cancel_d.png" disabledImage="images\cancel_dis.png" visible="false"/>
+  </div>
+
+  <script src="SelectionBox.js" />
+  <script src="main.js" />
+</view>

@@ -1,0 +1,9 @@
+; YesNoCancel.def : Declares the module parameters.
+
+LIBRARY      "YesNoCancel.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

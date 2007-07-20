@@ -1,0 +1,25 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+
+<strings>
+
+<GADGET_NAME>HTML Details View Sample Gadget</GADGET_NAME>
+<GADGET_DESCRIPTION>Demonstrates how to use the HTML details view</GADGET_DESCRIPTION>
+<GADGET_COPYRIGHT>Copyright (c) 2006 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+<GADGET_WEBSITE>http://desktop.google.com/</GADGET_WEBSITE>
+<GADGET_ABOUT>HTML Details View Sample Gadget
+Copyright (c) 2006 Google Inc. All Rights Reserved
+This gadget displays text that when clicked on opens a details view. This details view shows HTML. When one of the buttons in the details view is clicked on, the gadget will notify you which button was clicked.</GADGET_ABOUT>
+
+<CLICK_HERE>Click Here</CLICK_HERE>
+<DETAILS_VIEW_TITLE>HTML Details View Sample Gadget</DETAILS_VIEW_TITLE>
+<CLICK_AN_ITEM>Click on an item below:</CLICK_AN_ITEM>
+<ITEM_A>Item A</ITEM_A>
+<ITEM_B>Item B</ITEM_B>
+<ITEM_C>Item C</ITEM_C>
+
+</strings>

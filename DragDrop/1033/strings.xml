@@ -1,0 +1,26 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<strings>
+  <GADGET_NAME>Drag and Drop Sample Gadget</GADGET_NAME>
+  <GADGET_DESCRIPTION>Gadget Drag and Drop Example</GADGET_DESCRIPTION>
+  <GADGET_COPYRIGHT>Copyright (c) 2006 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+  <GADGET_WEBSITE>http://desktop.google.com</GADGET_WEBSITE>
+  <GADGET_ABOUT>Drag and Drop Sample Gadget
+  Copyright (c) 2006 Google Inc.
+  Drag and drop images onto the gadget.
+  The gadget will then display thumbnail versions of the images.
+  </GADGET_ABOUT>
+  <DRAG_IMAGES_HERE>Drag image(s) here</DRAG_IMAGES_HERE>
+  <THERE_ARE>There are</THERE_ARE>
+  <IMAGES>images(s)</IMAGES>
+  <OTHERS>others</OTHERS>
+  <AND>and</AND>
+</strings>
