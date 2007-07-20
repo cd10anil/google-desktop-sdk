@@ -1,0 +1,27 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+
+<strings>
+
+<GADGET_NAME>Options Dialog Sample Gadget</GADGET_NAME>
+<GADGET_DESCRIPTION>Demonstrates how to show an options dialog</GADGET_DESCRIPTION>
+<GADGET_COPYRIGHT>Copyright (c) 2006 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+<GADGET_WEBSITE>http://desktop.google.com/</GADGET_WEBSITE>
+<GADGET_ABOUT>Options Dialog Sample Gadget
+Copyright (c) 2006 Google Inc. All Rights Reserved
+This gadget shows how to use the options dialog functionality. An options dialog has a seperate options.xml file which designs and controls it. Using the options object, you can save settings throughout multiple sessions of your gadget. This sample demonstrates three checkboxes in an options dialog.</GADGET_ABOUT>
+
+<CHECKBOX_LABEL_A>Checkbox A</CHECKBOX_LABEL_A>
+<CHECKBOX_LABEL_B>Checkbox B</CHECKBOX_LABEL_B>
+<CHECKBOX_LABEL_C>Checkbox C</CHECKBOX_LABEL_C>
+
+<ON>On</ON>
+<OFF>Off</OFF>
+
+<OPEN_OPTIONS>Open Options Dialog</OPEN_OPTIONS>
+
+</strings>

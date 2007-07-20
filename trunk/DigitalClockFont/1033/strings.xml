@@ -1,0 +1,38 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<strings>
+
+  <ABOUT_TEXT>Google Gadgets Digital Clock LCD
+  Copyright 2006 Google Inc. All Rights Reserved
+  Always be able to keep track of time at a glance.  The time is automatically set to your system clock.  You can change the color of the clock face from a selection of 8 delicious shades with the color button.  Pull it off the sidebar to place it in your favorite place on the desktop.</ABOUT_TEXT>
+  
+  <PLUGIN_NAME>Digital Clock LCD</PLUGIN_NAME>
+  <PLUGIN_DESCRIPTION>Keep track of time with a quick glance - digitally</PLUGIN_DESCRIPTION>
+  
+  <AM_TEXT>AM</AM_TEXT>
+  <PM_TEXT>PM</PM_TEXT>
+  
+  <DAY_NAME0>Sun</DAY_NAME0>
+  <DAY_NAME1>Mon</DAY_NAME1>
+  <DAY_NAME2>Tue</DAY_NAME2>
+  <DAY_NAME3>Wed</DAY_NAME3>
+  <DAY_NAME4>Thu</DAY_NAME4>
+  <DAY_NAME5>Fri</DAY_NAME5>
+  <DAY_NAME6>Sat</DAY_NAME6>
+  
+  <TOOLTIP_CHANGE_COLOR>Change color</TOOLTIP_CHANGE_COLOR>
+  <DEFAULT_24HOURMODE>false</DEFAULT_24HOURMODE>
+  
+  <MENU_AMPM>A&amp;M/PM</MENU_AMPM>
+  <MENU_24HOUR>&amp;24 Hour</MENU_24HOUR>
+
+</strings>
+

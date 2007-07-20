@@ -1,0 +1,30 @@
+<!-- Copyright (c) 2007 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/dev/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<strings>
+  <GADGET_NAME>XML Details View Demo</GADGET_NAME>
+  <GADGET_DESCRIPTION>Demonstrates using an XML-specified details view</GADGET_DESCRIPTION>
+  <GADGET_ABOUT_TEXT>XML Details View Demo
+Copyright (c) 2007 Google Inc. All Rights Reserved
+This gadget has a details view that's specified using XML. To open the details view, click the text in the main view.
+
+Within details view, select an item from the listbox.  The details view will then close, and the name of the selected item will be shown in the main view.</GADGET_ABOUT_TEXT>
+  
+  <DETAILS_VIEW_TITLE>An XML-specified details view</DETAILS_VIEW_TITLE>
+
+  <CLICK_HERE>Click Here</CLICK_HERE>
+
+  <CHOOSE_ITEM>Choose an item by clicking it:</CHOOSE_ITEM>  
+  
+  <LAST_ITEM_CHOSEN>Last item chosen: </LAST_ITEM_CHOSEN>
+  <ITEM_A>Item A</ITEM_A>
+  <ITEM_B>Item B</ITEM_B>
+  <ITEM_C>Item C</ITEM_C>
+</strings>

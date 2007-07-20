@@ -1,0 +1,16 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+
+<view width="250" height="150" onLoad="onLoad();">
+  <script src="main.js" />
+
+  <img src="background.png" />
+  <label x="5" y="30" width="230" height="30" align="center" size="10" 
+    wordwrap="true">&BROWSE;</label>
+  <label x="15" y="80" bold="true" size="10">&LAST_WEBSITE;</label>
+  <label name="websiteLabel" x="15" y="95" width="200" size="10">&NONE;</label>
+</view>

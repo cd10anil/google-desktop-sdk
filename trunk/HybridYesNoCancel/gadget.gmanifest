@@ -1,0 +1,18 @@
+<gadget minimumGoogleDesktopVersion="5.0.0.0">
+  <about>
+    <id>196FCEED-EA91-40D8-B9EB-8DE996F6E784</id>
+    <version>1.0.0.0</version>
+    <author>Google</author>
+    <authorEmail></authorEmail>
+    <authorWebsite>&GADGET_WEBSITE;</authorWebsite>
+    <copyright>&GADGET_COPYRIGHT;</copyright>
+    <name>&GADGET_NAME;</name>
+    <description>&GADGET_DESCRIPTION;</description>
+    <aboutText>&GADGET_ABOUT;</aboutText>
+    <smallIcon>icon_small.png</smallIcon>
+    <icon>icon_large.gif</icon>
+  </about>
+  <install>
+    <object name="MyStuff" clsid="46F0DF4E-C118-4358-A753-900759148E31" src="YesNoCancel.dll" />
+  </install>
+</gadget>

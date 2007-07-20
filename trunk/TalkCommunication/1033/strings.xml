@@ -1,0 +1,29 @@
+<!-- Copyright (c) 2006 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+
+<strings>
+
+<GADGET_NAME>Talk Communication Sample Gadget</GADGET_NAME>
+<GADGET_DESCRIPTION>Demonstrates how to communicate between people using the Communications API</GADGET_DESCRIPTION>
+<GADGET_COPYRIGHT>Copyright (c) 2006 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+<GADGET_WEBSITE>http://desktop.google.com/</GADGET_WEBSITE>
+<GADGET_ABOUT>Talk Communication Sample Gadget
+Copyright (c) 2006 Google Inc. All Rights Reserved
+This gadget shows how to send and receive data to users running the same gadget on their machine. If you click on a user, they will receive a message box notifying them that you sent data. A Google Talk account is required and the Google Talk client must be running and connected.</GADGET_ABOUT>
+
+<SEND_MESSAGE_TITLE>Click to send a message</SEND_MESSAGE_TITLE>
+<SEND_MESSAGE_PREFIX>Send a message to </SEND_MESSAGE_PREFIX>
+
+<DATA>Data</DATA>
+<DATA_FROM>Data from</DATA_FROM>
+<SENT_FROM_GADGET>This message was sent from a Google Desktop gadget!</SENT_FROM_GADGET>
+
+<TALK_STATUS_0>Online</TALK_STATUS_0>
+<TALK_STATUS_1>Away</TALK_STATUS_1>
+<TALK_STATUS_2>Busy</TALK_STATUS_2>
+
+</strings>

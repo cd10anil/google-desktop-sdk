@@ -1,0 +1,33 @@
+<!-- Copyright (c) 2007 Kathy Walrath -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<strings>
+  <GADGET_NAME>Kiss Me!</GADGET_NAME>
+  <GADGET_DESCRIPTION>A kissable, framed picture of your sweetheart.</GADGET_DESCRIPTION>
+  <GADGET_ABOUT_TEXT>Kiss Me!
+© 2007 Kathy Walrath
+Keep a kissable picture of your sweetheart on your desktop.
+
+First add your sweetie's image by dragging a PNG, JPEG, GIF, or TIFF file into the golden frame.
+
+Then whenever you feel the need, kiss your sweetie by clicking the image!
+
+This gadget works best with an image that's 100 pixels wide and 120 pixels tall, or that has a similar width-to-height ratio.
+
+Credits:
+The kissing sound was created by roscoetoon and downloaded from Freesound.
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=26403
+http://freesound.iua.upf.edu/usersViewSingle.php?id=186469
+
+This gadget's built-in images were created by my sweetie, Nathan Walrath.
+</GADGET_ABOUT_TEXT>
+
+  <KISS_SOUND>kiss.wav</KISS_SOUND>
+</strings>
