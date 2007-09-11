@@ -1,21 +1,44 @@
-<!-- Copyright (c) 2006 Google Inc. -->
-<!-- All rights reserved -->
-<!-- -->
-<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
-<!-- To download the latest version of the SDK please visit -->
-<!-- http://desktop.google.com/downloadsdksubmit -->
+<!-- 
+Copyright (C) 2007 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
 
 <strings>
 
 <GADGET_NAME>Memory Game Gadget</GADGET_NAME>
 <GADGET_DESCRIPTION>Test your memory with this simple game</GADGET_DESCRIPTION>
-<GADGET_COPYRIGHT>Copyright (c) 2006 Google Inc.</GADGET_COPYRIGHT>
+<GADGET_COPYRIGHT>Copyright (c) 2007 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
 <GADGET_WEBSITE>http://desktop.google.com</GADGET_WEBSITE>
 <GADGET_ABOUT>Memory Game Gadget
-Copyright (c) 2006 Google Inc.
+Copyright (c) 2007 Google Inc.
 Click anywhere within the gadget to begin a new game.
 
 Repeat the sequence given by the game.
+
+
+Contains works created by HardPCM:
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=33237
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=33235
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=33231
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=33216
+All made available under the Creative Commons Sampling Plus 1.0 License:
+http://creativecommons.org/licenses/sampling+/1.0/
+
+Contains work created by Wolfsinger:
+http://freesound.iua.upf.edu/samplesViewSingle.php?id=25762
+Made available under the Creative Commons Sampling Plus 1.0 License:
+http://creativecommons.org/licenses/sampling+/1.0/
 </GADGET_ABOUT>
 
 <NEW_GAME>New Game</NEW_GAME>
