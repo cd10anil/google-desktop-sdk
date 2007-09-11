@@ -1,0 +1,82 @@
+<!--
+Copyright (C) 2007 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<view width="136" height="155" onopen="onOpen()" onsize="onSize()" resizable="true">
+  <script src="editme/config_constants.js" />
+  <script src="utils_js/utils.js" />
+  <script src="utils_js/parsers.js" />
+  <script src="utils_js/entry_list.js" />
+  <script src="main.js" />
+  <script src="editme/entry_item_impl.js" />
+
+  <div name="container">
+    <!-- Content -->
+    <div name="content"
+         background="#FFFFFF">
+      <!-- Entry container -->
+      <div name="entriesViewPort">
+        <div name="entries" width="100%" />
+      </div>
+      <!-- Status label -->
+      <label name="statusLabel" size="8" />
+    </div>
+
+    <!-- Scrollbar -->
+    <div name="scrollbar"
+         enabled="false">
+      <progressbar name="bar"
+                   cursor="hand"
+                   enabled="true"
+                   value="100"
+                   orientation="vertical" />
+    </div>
+
+    <!-- Frame -->
+    <div name="header">
+      <img name="left" />
+      <div name="middle" height="100%">
+        <img name="stretchImage" width="100%" />
+      </div>      
+      <img name="right" />
+    </div>
+
+    <div name="logo">
+      <img name="image" />
+    </div>
+
+    <div name="borderLeft">
+      <img name="stretchImage" height="100%" />
+    </div>
+
+    <div name="borderRight">
+      <img name="stretchImage" height="100%" />    
+    </div>    
+
+    <div name="footer">
+      <img name="left" />
+      <div name="middle" height="100%">
+        <img name="stretchImage" width="100%" />
+      </div>      
+      <img name="right" />
+    </div>
+    
+    <!-- Title -->
+    <div name="title" width="100%" />
+  </div>
+
+  <!-- See "getImageDimensions" in utils.js -->
+  <img name="imgSizer" width="0" height="0" />
+</view>

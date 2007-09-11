@@ -1,0 +1,16 @@
+﻿<!-- Copyright (c) 2007 Google Inc. -->
+<!-- All rights reserved -->
+<!-- -->
+<!-- This file is part of the Google Desktop SDK and may be freely copied and used. -->
+<!-- To download the latest version of the SDK please visit -->
+<!-- http://desktop.google.com/ -->
+<!-- -->
+<!-- Our developer support group is at: -->
+<!-- http://groups.google.com/group/Google-Desktop-Developer -->
+
+<view height="100" width ="200" resizable="false" onopen="onOpen();">
+  <img src="background.png" />
+  <a x="0" y="0" width="200" height="100" align="center" 
+    vAlign="middle" size="12" onclick="onDetailsClick();" enabled="yes">Click to see parser results</a>
+  <script src="SimpleXmlParser.js" />
+</view>
