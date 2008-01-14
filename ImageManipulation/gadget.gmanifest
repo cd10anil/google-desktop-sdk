@@ -1,0 +1,18 @@
+<gadget minimumGoogleDesktopVersion="5.5.0.0">
+  <platform>
+    <windows minimumGadgetHostVersion="5.5.0.0"/>
+  </platform>
+  <about>
+    <id>4c174776-9652-440e-a6d2-9b2ce077556d</id>
+    <version>1.0.0.0</version>
+    <author>Google</author>
+    <authorEmail></authorEmail>
+    <authorWebsite>&GADGET_WEBSITE;</authorWebsite>
+    <copyright>&GADGET_COPYRIGHT;</copyright>
+    <name>&GADGET_NAME;</name>
+    <description>&GADGET_DESCRIPTION;</description>
+    <aboutText>&GADGET_ABOUT;</aboutText>
+    <smallIcon>icon_small.png</smallIcon>
+    <icon>icon_large.gif</icon>
+  </about>
+</gadget>
