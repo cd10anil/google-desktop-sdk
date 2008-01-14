@@ -1,0 +1,34 @@
+<!--
+Copyright (C) 2007 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<strings>
+
+<GADGET_NAME>Color Multiply Sample Gadget</GADGET_NAME>
+<GADGET_DESCRIPTION>Demonstrates changing an image's color at runtime.</GADGET_DESCRIPTION>
+<GADGET_COPYRIGHT>Copyright (c) 2007 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+<GADGET_WEBSITE>http://desktop.google.com/</GADGET_WEBSITE>
+<GADGET_ABOUT>Color Multiply Sample Gadget
+Copyright (c) 2007 Google Inc. All Rights Reserved
+Select a color using the radio buttons. The background image will be "multiplied" with the selected color.
+</GADGET_ABOUT>
+
+<BEHOLD>Behold ... colorMultiply</BEHOLD>
+
+<RED>Red (#FF0000)</RED>
+<GREEN>Green (#00FF00)</GREEN>
+<BLUE>Blue (#0000FF)</BLUE>
+
+</strings>

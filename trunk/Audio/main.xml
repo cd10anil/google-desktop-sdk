@@ -18,6 +18,12 @@ limitations under the License.
   <script src="main.js" />
 
   <img src="background.png" />
-  <label name="playStopLabel" x="0" y="60" align="center" width="250" size="15" 
-    enabled="true" onclick="onTextClick();">&PLAY;</label>
+
+  <button name="playStopButton" x="93" y="64" width="64" height="22"
+          downImage="button_down.png"
+          image="button_up.png"
+          overImage="button_over.png"
+          caption="&PLAY;"
+          font="Arial" size="9" color="#000000"
+          onClick="onTextClick();" />
 </view>

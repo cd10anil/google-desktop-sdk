@@ -25,9 +25,9 @@ var IdGenerator = new function() {
   this.nextId = 0;
 
   this.getNextId = function() {
-    return this.nextId++;
-  }
-}
+    return ++this.nextId;
+  };
+};
 
 // Attempts to automatically parse feed.
 // So far can detect and parse basic ATOM and RSS.
@@ -63,7 +63,9 @@ function parseFeedDefault(responseText, callback) {
   var entries;
 
   if (rootTagName == 'rss' || rootTagName =='channel') {
-    entries = parseRSS(doc, CONFIG_MAX_ENTRIES);
+    entries = parseRSS20(doc, CONFIG_MAX_ENTRIES);
+  } else if (rootTagName == 'rdf:RDF') {
+    entries = parseRSS10(doc, CONFIG_MAX_ENTRIES);
   } else if (rootTagName == 'feed') {
     // ATOM has top level "feed" element.
     entries = parseATOM(doc, CONFIG_MAX_ENTRIES);
@@ -75,10 +77,61 @@ function parseFeedDefault(responseText, callback) {
   callback(entries);
 }
 
-// Generic RSS parser.
+// Generic RSS 1.0 parser.
 // Returns array of data objects.
-function parseRSS(doc, maxEntries) {
-  debug.trace('Parsing RSS feed.');
+function parseRSS10(doc, maxEntries) {
+  debug.trace('Parsing RSS 1.0 feed.');
+  var entries = [];
+
+  try {
+    var entryElements = doc.getElementsByTagName('item');
+
+    for (var i = 0; i < entryElements.length && i < maxEntries; ++i) {
+      var entry = entryElements[i];
+      var entryData = {};
+
+      // ID.
+      entryData['id'] = entry.getAttribute('rdf:about');
+
+      // Entry title.
+      entryData['title'] = entry.getElementsByTagName('title')[0].text;
+
+      // Strip any possible HTML from title.
+      entryData['title'] = stripHtml(entryData['title']);
+
+      // Publish date.
+      if (entry.getElementsByTagName('dc:date').length > 0) {
+        var pubDate = entry.getElementsByTagName('dc:date')[0].text;
+        entryData['published'] = parseRFC3339(pubDate);
+      }
+
+      // Entry content (optional).
+      if (entry.getElementsByTagName('description').length > 0) {
+        entryData['content'] =
+            entry.getElementsByTagName('description')[0].text;
+      } else {
+        entryData['content'] = entryData['title'];
+      }
+
+      // Link.
+      entryData['link'] = entry.getElementsByTagName('link')[0].text;
+
+      entries.push(entryData);
+    }
+  } catch(e) {
+    debug.error('Error parsing RSS 1.0 feed: ' + e.message);
+    return;
+  }
+
+  debug.trace('Successfully parsed ' + entries.length + ' entries.');
+
+  return entries;
+}
+
+// Generic RSS 2.0 parser.
+// Returns array of data objects.
+function parseRSS20(doc, maxEntries) {
+  debug.trace('Parsing RSS 2.0 feed.');
   var entries = [];
 
   try {
@@ -116,7 +169,7 @@ function parseRSS(doc, maxEntries) {
       entries.push(entryData);
     }
   } catch(e) {
-    debug.error('Error parsing RSS feed: ' + e.message);
+    debug.error('Error parsing RSS 2.0 feed: ' + e.message);
     return;
  }
 
@@ -151,8 +204,13 @@ function parseATOM(doc, maxEntries) {
       var published = entry.getElementsByTagName('published')[0].text;
       entryData['published'] = parseRFC3339(published);
 
-      // Entry content.
-      entryData['content'] = entry.getElementsByTagName('content')[0].text;
+      // Entry content (optional).
+      if (entry.getElementsByTagName('content').length > 0) {
+        entryData['content'] = entry.getElementsByTagName('content')[0].text;
+      } else {
+        // Set content to the title.
+        entryData['content'] = entryData['title'];
+      }
 
       // Get the alt link.
       var linkElements = entry.getElementsByTagName('link');

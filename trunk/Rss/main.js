@@ -132,10 +132,24 @@ function retrieveFeed(url, callback) {
   debug.trace('Opening request to: ' + url);
 
   function onRequestError() {
-    request.abort();
+    if (request) {
+      request.abort();
+      // Prevent leak.
+      request = null;
+    }
     debug.warning('Request error, will retry later.');
     // Retry again later.
     view.setTimeout(refresh, getRetryDelay());
+  }
+
+  var timeoutTimer = null;
+
+  if (!lastEntries) {
+    // Want to set a timeout since no data is available.
+    // If request times out, call onRequestError to retry.
+    timeoutTimer = view.setTimeout(
+        onRequestError,
+        CONFIG_HTTP_REQUEST_TIMEOUT_MS);
   }
 
   try {
@@ -149,16 +163,6 @@ function retrieveFeed(url, callback) {
       onRequestError();
     }
     return;
-  }
-
-  var timeoutTimer = null;
-
-  if (!lastEntries) {
-    // Want to set a timeout since no data is available.
-    // If request timesout, call onRequestError to retry.
-    timeoutTimer = view.setTimeout(
-        onRequestError,
-        CONFIG_HTTP_REQUEST_TIMEOUT_MS);
   }
 
   function onReadyStateChange() {
@@ -175,6 +179,8 @@ function retrieveFeed(url, callback) {
       debug.trace('Retrieve succeeded.');
       parseFeed(request.responseText, callback);
     }
+    // Prevent leak.
+    request = null;
   }
 }
 

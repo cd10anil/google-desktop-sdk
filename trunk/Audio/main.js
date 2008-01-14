@@ -47,9 +47,9 @@ function onAudioStateChange(audioClip, state) {
 }
 
 function startedAudio() {
-  playStopLabel.innerText = STOP;
+  playStopButton.caption = STOP;
 }
 
 function stoppedAudio() {
-  playStopLabel.innerText = PLAY;
+  playStopButton.caption = PLAY;
 }

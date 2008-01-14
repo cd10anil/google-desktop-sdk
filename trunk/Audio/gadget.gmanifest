@@ -1,4 +1,7 @@
-<gadget minimumGoogleDesktopVersion="5.0.0.0">
+<gadget minimumGoogleDesktopVersion="5.5.0.0">
+  <platform>
+    <windows minimumGadgetHostVersion="5.5.0.0"/>
+  </platform>
   <about>
     <id>393B7261-DEA3-4f90-A34E-06FC0BE4E455</id>
     <version>1.0.0.0</version>

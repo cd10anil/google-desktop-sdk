@@ -25,14 +25,14 @@ limitations under the License.
            itemSelectedColor="#99FF99" itemOverColor="#CCFFCC"
            name="listbox" onchange="lb_onchange()"
            autoscroll="false">
-    <listitem name="A"> 
+    <item name="A"> 
       <label align="center" height="24" valign="middle">&ITEM_A;</label>
-    </listitem>
-    <listitem name="B"> 
+    </item>
+    <item name="B"> 
       <label align="center" height="24" valign="middle">&ITEM_B;</label>
-    </listitem>
-    <listitem name="C"> 
+    </item>
+    <item name="C"> 
       <label align="center" height="24" valign="middle">&ITEM_C;</label>
-    </listitem>
+    </item>
   </listbox>      
 </view>

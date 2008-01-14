@@ -86,7 +86,16 @@ function parseRFC3339(date) {
 
   // Parse offset.
   var offsetPart = date.substring(index, index + 5);
-  offsetPart = offsetPart.split(":");
+
+  if (offsetPart.length == 4) {
+    // Assume colon-less format.
+    var tempOffsetPart = [];
+    tempOffsetPart[0] = offsetPart.substr(0, 2);
+    tempOffsetPart[1] = offsetPart.substr(2, 2);
+    offsetPart = tempOffsetPart;
+  } else {
+    offsetPart = offsetPart.split(":");
+  }
 
   if (offsetPart.length != 2) {
     return null;

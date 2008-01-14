@@ -23,8 +23,13 @@ limitations under the License.
  * 
  * - A listbox will autoscroll when undocked or expanded if 
  *   the "autoscroll" property is set to true
- * - To disable a listitem, set the "enabled" property to false
+ * - To disable an item, set the "enabled" property to false
  * - When an item is selected or unselected, an "onchange" event will fire
+ * 
+ * NOTE: This sample is not compatible with Mac Desktop Gadgets 1.0.0.0
+ * because it uses the <item> element which is not yet supported.
+ * To ensure a gadget based off this sample runs on the Mac,
+ * change the <item> elements to <listitem> in main.xml.
  */
  
 function view_onOpen() {

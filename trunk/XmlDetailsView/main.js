@@ -32,6 +32,11 @@ limitations under the License.
  * 
  * It behaves like an "options" object, 
  * so "putValue", "getValue", "remove", etc. methods are available.
+ *
+ * NOTE: This sample is not compatible with Mac Desktop Gadgets 1.0.0.0
+ * because it uses the <item> element which is not yet supported.
+ * To ensure a gadget based off this sample runs on the Mac,
+ * change the <item> elements to <listitem> in details.xml.
  */
  
 var detailsView;
