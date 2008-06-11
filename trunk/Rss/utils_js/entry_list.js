@@ -116,7 +116,7 @@ EntryList.prototype.loadTheme = function(themeDir) {
       pathify(themeDir, EntryList.CONFIG_FILE));
   
   // Parse config and extract values.
-  var xmlDoc = new DOMDocument();
+  var xmlDoc = makeDomDocument();
   xmlDoc.async = false;
   xmlDoc.loadXML(configXml);
  
@@ -220,7 +220,7 @@ EntryList.prototype.setupVerticalBorder = function(
     border, imagePath, isStretch) {
   if (isStretch) {
     border.children('stretchImage').src = imagePath;
-    border.width = border.children('stretchImage').srcWidth;	  
+    border.width = border.children('stretchImage').srcWidth;  
     border.background = '';    
   } else {
     border.background = imagePath;

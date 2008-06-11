@@ -26,6 +26,13 @@ function onCancel() {
 }
 
 function onOk() {
+  // At least one must be checked.
+  if (!checkboxA.value && !checkboxB.value && !checkboxC.value) {
+    prompt.color = "#FF0000";
+    event.returnValue = false;
+    return false;
+  }
+
   // Save all the settings only if required
   options.putValue("checkboxa", checkboxA.value ? "ON" : "OFF");
   options.putValue("checkboxb", checkboxB.value ? "ON" : "OFF");

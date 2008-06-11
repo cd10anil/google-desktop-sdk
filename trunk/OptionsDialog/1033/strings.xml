@@ -22,7 +22,7 @@ limitations under the License.
 <GADGET_WEBSITE>http://desktop.google.com/</GADGET_WEBSITE>
 <GADGET_ABOUT>Options Dialog Sample Gadget
 Copyright (c) 2007 Google Inc. All Rights Reserved
-This gadget shows how to use the options dialog functionality. An options dialog has a seperate options.xml file which designs and controls it. Using the options object, you can save settings throughout multiple sessions of your gadget. This sample demonstrates three checkboxes in an options dialog.</GADGET_ABOUT>
+This gadget shows how to use the options dialog functionality. An options dialog has a seperate options.xml file which designs and controls it. Using the options object, you can save settings throughout multiple sessions of your gadget. This sample demonstrates three checkboxes in an options dialog. This gadget also shows how to perform validation and prevent the dialog from closing.</GADGET_ABOUT>
 
 <CHECKBOX_LABEL_A>Checkbox A</CHECKBOX_LABEL_A>
 <CHECKBOX_LABEL_B>Checkbox B</CHECKBOX_LABEL_B>
@@ -32,5 +32,6 @@ This gadget shows how to use the options dialog functionality. An options dialog
 <OFF>Off</OFF>
 
 <OPEN_OPTIONS>Open Options Dialog</OPEN_OPTIONS>
+<PLEASE_SELECT>Please select at least one:</PLEASE_SELECT>
 
 </strings>

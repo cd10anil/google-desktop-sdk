@@ -78,6 +78,8 @@ function view_onPopOut() {
  * Resize the scroll area to match the view's current size.
  */
 function resizeScrollarea() {
-  // Fill vertical space with the scroll area
-  scrollarea.height = view.height - label.height;
+  // Resize vertical space to the available visible area, but limit to the
+  // image's height so it shows the parent div below the image.
+  var newHeight = view.height - label.height;
+  viewport.height = (newHeight > pisa.height) ? pisa.height : newHeight;
 }
