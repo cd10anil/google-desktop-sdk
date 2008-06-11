@@ -50,7 +50,7 @@ function parseFeedDefault(responseText, callback) {
   var doc;
 
   try {
-    doc = new DOMDocument();
+    doc = makeDomDocument();
     doc.loadXML(responseText);
   } catch(e) {
     debug.error('Could not load XML.');
@@ -201,12 +201,19 @@ function parseATOM(doc, maxEntries) {
       entryData['title'] = stripHtml(entryData['title']);
 
       // Published.
-      var published = entry.getElementsByTagName('published')[0].text;
-      entryData['published'] = parseRFC3339(published);
+      if (entry.getElementsByTagName('published').length > 0) {
+        var published = entry.getElementsByTagName('published')[0].text;
+        entryData['published'] = parseRFC3339(published);
+      } else if (entry.getElementsByTagName('updated').length > 0) {
+        var updated = entry.getElementsByTagName('updated')[0].text;
+        entryData['published'] = parseRFC3339(updated);
+      }
 
       // Entry content (optional).
       if (entry.getElementsByTagName('content').length > 0) {
         entryData['content'] = entry.getElementsByTagName('content')[0].text;
+      } else if (entry.getElementsByTagName('summary').length > 0) {
+        entryData['content'] = entry.getElementsByTagName('summary')[0].text;
       } else {
         // Set content to the title.
         entryData['content'] = entryData['title'];

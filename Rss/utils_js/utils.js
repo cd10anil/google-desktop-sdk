@@ -251,3 +251,12 @@ SimpleXmlParser.prototype.getItems = function(key) {
   } 
   return items;
 };
+
+function makeDomDocument() {
+  var doc = new DOMDocument();
+  doc.resolveExternals = false;
+  doc.validateOnParse = false;
+  doc.setProperty('ProhibitDTD', false); 
+
+  return doc;
+}

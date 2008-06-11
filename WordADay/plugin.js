@@ -169,6 +169,10 @@ function WordItem(url) {
     if (http.readyState == 4) { // completed?
       // parse the xml data received
       var doc = new DOMDocument();
+      doc.resolveExternals = false;
+      doc.validateOnParse = false;
+      doc.setProperty('ProhibitDTD', false); 
+
       doc.loadXML(http.responseText);
 
       // read the word title, description and link from the xml

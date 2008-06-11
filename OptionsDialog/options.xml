@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Copyright (C) 2007 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,25 +14,39 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<view width="250" height="60" onopen="onOpen();" onOk="onOk();" 
+<view width="250" height="85" onopen="onOpen();" onOk="onOk();"
     onCancel="onCancel();">
   <script src="options.js" />
 
-  <checkbox name="checkboxA" x="10" y="10" enabled="true" 
-    image="checkbox_unchecked.gif" downImage="checkbox_click.gif" 
-    checkedDownImage="checkbox_click.gif" checkedImage="checkbox_checked.gif" 
-    overImage="checkbox_hover.gif" />
-  <label x="23" y="8" size="9">&CHECKBOX_LABEL_A;</label>
+  <label name="prompt" x="10" y="8" size="9">&PLEASE_SELECT;</label>
 
-  <checkbox name="checkboxB" x="10" y="25" enabled="true" 
-    image="checkbox_unchecked.gif" downImage="checkbox_click.gif" 
-    checkedDownImage="checkbox_click.gif" checkedImage="checkbox_checked.gif" 
-    overImage="checkbox_hover.gif" />
-  <label x="23" y="23" size="9">&CHECKBOX_LABEL_B;</label>
+  <checkbox name="checkboxA" x="10" y="25" enabled="true"
+    width="100"
+    image="checkbox_up.png"
+    overImage="checkbox_over.png"
+    downImage="checkbox_down.png"
+    checkedImage="checkbox_checked_up.png"
+    checkedOverImage="checkbox_checked_over.png"
+    checkedDownImage="checkbox_checked_down.png"
+    caption="&CHECKBOX_LABEL_A;" size="9" />
 
-  <checkbox name="checkboxC" x="10" y="40" enabled="true" 
-    image="checkbox_unchecked.gif" downImage="checkbox_click.gif" 
-    checkedDownImage="checkbox_click.gif" checkedImage="checkbox_checked.gif" 
-    overImage="checkbox_hover.gif" />
-  <label x="23" y="38" size="9">&CHECKBOX_LABEL_C;</label>
+  <checkbox name="checkboxB" x="10" y="45" enabled="true"
+    width="100"
+    image="checkbox_up.png"
+    overImage="checkbox_over.png"
+    downImage="checkbox_down.png"
+    checkedImage="checkbox_checked_up.png"
+    checkedOverImage="checkbox_checked_over.png"
+    checkedDownImage="checkbox_checked_down.png"
+    caption="&CHECKBOX_LABEL_B;" size="9" />
+
+  <checkbox name="checkboxC" x="10" y="65" enabled="true"
+    width="100"
+    image="checkbox_up.png"
+    overImage="checkbox_over.png"
+    downImage="checkbox_down.png"
+    checkedImage="checkbox_checked_up.png"
+    checkedOverImage="checkbox_checked_over.png"
+    checkedDownImage="checkbox_checked_down.png"
+    caption="&CHECKBOX_LABEL_C;" size="9" />
 </view>
