@@ -1,0 +1,49 @@
+﻿<!--
+Copyright (C) 2008 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<view height="150" width="400" onopen="view_onOpen();">
+  <img height="22" name="imgTop" width="358" x="22" y="0" src="top.png"/>
+  <img height="22" name="imgBottom" pinY="22" width="358" x="22" y="100%" src="bottom.png"/>
+  <img height="106" name="imgLeft" width="22" x="0" y="22" src="left.png"/>
+  <img height="106" name="imgRight" pinX="22" width="22" x="100%" y="22" src="right.png"/>
+  <img height="22" name="imgTopLeft" width="22" x="0" y="0" src="top_left.png"/>
+  <img height="22" name="imgTopRight" pinX="22" width="22" x="100%" y="0" src="top_right.png"/>
+  <img height="22" name="imgBottomLeft" pinY="22" width="22" x="0" y="100%" src="bottom_left.png"/>
+  <img height="22" name="imgBottomRight" pinX="22" pinY="22" width="22" x="100%" y="100%" src="bottom_right.png"/>
+  <div enabled="true" height="107" hitTest="htclient" name="frameMiddle"
+      width="356" x="22" y="22" background="#DDDDFF">
+      <button height="25" name="yes" width="45" x="54" y="45" onclick="answerQuestion(1);"
+        color="#FFFFFF" downImage="button_down.png" image="button_up.png"
+        overImage="button_over.png" caption="&YES;"/>
+      <button height="25" name="no" width="45" x="155" y="45" onclick="answerQuestion(0);"
+        color="#FFFFFF" downImage="button_down.png" image="button_up.png"
+        overImage="button_over.png" caption="&NO;"/>
+      <button height="25" name="top_questions" width="150" x="188" y="75"
+        onclick="onTopQuestionsClicked();" color="#FFFFFF"
+        downImage="button_down.png" image="button_up.png" overImage="button_over.png"
+        caption="Top rated questions"/>
+      <button height="25" name="ask_question" width="150" x="20" y="75"
+        onclick="onAskQuestionClicked();" color="#FFFFFF"
+        downImage="button_down.png" image="button_up.png" overImage="button_over.png"
+        caption="&ASK_QUESTION;"/>
+      <button height="25" name="skip" width="45" x="264" y="45" onclick="getNextQuestion();"
+        color="#FFFFFF" downImage="button_down.png" image="button_up.png"
+        overImage="button_over.png" caption="&SKIP;"/>
+      <edit height="25" name="question" width="250" x="50" y="10" size="10" bold="true" multiline="true"
+        enabled="false" background="#DDDDFF" editable="false" wordwrap="true" value="&LOADING_QUESTION;"/>
+  </div>
+  <script src="main.js" />
+</view>
