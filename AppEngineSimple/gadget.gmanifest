@@ -1,7 +1,7 @@
 ﻿<gadget minimumGoogleDesktopVersion="5.1.0.0">
   <about>
     <name>&GADGET_NAME;</name>
-    <description>GADGET_DESCRIPTION;</description>
+    <description>&GADGET_DESCRIPTION;</description>
     <aboutText>&GADGET_ABOUT;</aboutText>
     <smallIcon>icon_small.png</smallIcon>
     <icon>icon_large.png</icon>
