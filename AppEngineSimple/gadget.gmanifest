@@ -1,0 +1,14 @@
+﻿<gadget minimumGoogleDesktopVersion="5.1.0.0">
+  <about>
+    <name>&GADGET_NAME;</name>
+    <description>GADGET_DESCRIPTION;</description>
+    <aboutText>&GADGET_ABOUT;</aboutText>
+    <smallIcon>icon_small.png</smallIcon>
+    <icon>icon_large.png</icon>
+    <version>1.0.0.0</version>
+    <author>Google</author>
+    <authorWebsite></authorWebsite>
+    <copyright>&GADGET_COPYRIGHT;</copyright>
+    <id>0536F2D6-066C-4dfc-9848-4EDE92F77FE5</id>
+  </about>
+</gadget>

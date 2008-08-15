@@ -1,0 +1,37 @@
+<!-- 
+Copyright (C) 2008 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<strings>
+
+  <GADGET_NAME>Yes or No?</GADGET_NAME>
+  <GADGET_DESCRIPTION>The gadget shows a question and you have to answer in yes or no.
+    It also allows you to ask questions and view top rated questions.</GADGET_DESCRIPTION>
+  <GADGET_COPYRIGHT>Copyright (c) 2008 Google Inc. All Rights Reserved</GADGET_COPYRIGHT>
+  <GADGET_WEBSITE>http://desktop.google.com</GADGET_WEBSITE>
+  <GADGET_ABOUT>AppEngine Sample Gadget
+Copyright (c) 2008 Google Inc. All Rights Reserved
+  </GADGET_ABOUT>
+  
+  <LOADING_QUESTION>Loading question...</LOADING_QUESTION>
+  <YES>yes</YES>
+  <NO>no</NO>
+  <SKIP>skip</SKIP>
+  <TOP_RATED_QUESTIONS>Top rated questions</TOP_RATED_QUESTIONS>
+  <ASK_QUESTION>Ask a question</ASK_QUESTION>
+  <SUBMIT>Submit</SUBMIT>
+  <OK>ok</OK>
+
+</strings>
