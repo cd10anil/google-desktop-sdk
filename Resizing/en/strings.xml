@@ -1,0 +1,44 @@
+<!--
+Copyright (C) 2008 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<strings>
+
+<GADGET_NAME>Resizable Sample Gadget</GADGET_NAME>
+<GADGET_DESCRIPTION>Demonstrates a resizable gadget</GADGET_DESCRIPTION>
+<GADGET_ABOUT>Resizable Sample Gadget
+Copyright (c) 2008 Google Inc. All Rights Reserved
+Demonstrates a resizable gadget.
+
+The resizable property of view has been set to 'true' and a resize handler has been set.
+
+Due to the thick frame border, the resizeBorder property has been set to be thicker than the 8 pixel default.
+</GADGET_ABOUT>
+
+<CONTENT>
+Ten years ago...
+
+In 1972, a crack commando unit was sent to prison by a military court for a crime they didn't commit.
+
+These men promptly escaped from a maximum security stockade to the Los Angeles underground.
+
+Today, still wanted by the government, they survive as soldiers of fortune.
+
+If you have a problem, if no one else can help, and if you can find them, maybe you can hire...
+
+The A-Team
+</CONTENT>
+
+</strings>

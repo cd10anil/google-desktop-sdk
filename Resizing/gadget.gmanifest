@@ -1,0 +1,20 @@
+<gadget minimumGoogleDesktopVersion="5.8.0.0">
+  <platform>
+    <windows minimumGadgetHostVersion="5.8.0.0"/>
+  </platform>
+  <about>
+    <id>24294930-569D-47ef-AA6B-26D371644E76</id>
+    <version>1.0.0.0</version>
+    <author>Google, Inc.</author>
+    <authorEmail>gd-developer@google.com</authorEmail>
+    <authorWebsite>http://desktop.google.com/</authorWebsite>
+    <copyright>Copyright (c) 2008 Google Inc. All Rights Reserved</copyright>
+    <name>&GADGET_NAME;</name>
+    <description>&GADGET_DESCRIPTION;</description>
+    <aboutText>&GADGET_ABOUT;</aboutText>
+    <smallIcon>icon_small.png</smallIcon>
+    <icon>icon_large.gif</icon>
+    <category>tools</category>
+  </about>
+</gadget>
+
