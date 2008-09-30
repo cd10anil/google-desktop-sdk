@@ -20,7 +20,7 @@ limitations under the License.
 function onOpen() {
   // Human readable names for the topics.
   var topicNames = {};
-  topicNames[gddTopicIdRealestate] = strings.UNKNOWN;
+  topicNames[gddTopicIdUnknown] = strings.UNKNOWN;
   topicNames[gddTopicIdBusiness] = strings.BUSINESS;
   topicNames[gddTopicIdFinance] = strings.FINANCE;
   topicNames[gddTopicIdNews] = strings.NEWS;
