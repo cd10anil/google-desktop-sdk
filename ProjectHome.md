@@ -1,0 +1,1 @@
+The project home for Google Desktop SDK samples.
